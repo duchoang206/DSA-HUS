@@ -1,3 +1,4 @@
+package Chuong1SapXep;
 public class BubbleSort<T extends Comparable<T>> {
 
     private final T[] array;
