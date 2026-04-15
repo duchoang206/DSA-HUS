@@ -42,7 +42,22 @@ class InsertionSort {
      * - Mảng sau khi sắp xếp phải giảm dần.
      */
     public void sort() {
-        // TODO
+        for ( int i =1 ; i < array.length ; i++ ) {
+            double key = array[i];
+            for ( int j = i-1 ; j >=0 ; j--) {
+                
+                if ( key > array[j]) {
+                    comparisons++;
+                }
+            if ( key > array[j]) {
+                double temp = array[j];
+                array[j+1] = array[j];
+                array[j+1] = temp;
+                shifts++;
+            } 
+            } array[j + 1] = key;
+            } 
+        }
     }
 
     @Override
